@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliveryer Form</title>
+</head>
+<body>
+    <h1>Please fill below form for safe delivery</h1>
+    <form>
+        
+        <div>
+            <h2>Customer name</h2>
+            <label>First Name:</label>
+            <input type="text" placeholder="First Name">
+            <!-- br is used to place first name and last name in different lines. second br is used to leave line in-between both of them -->
+            <br><br>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Last Name">
+        </div>
+
+        <div>
+            <h2>Address</h2>
+            <label>House Number:</label>
+            <input type="text" placeholder="House Number">
+            <br><br>
+            <label>Street Number:</label>
+            <input type="text" placeholder="Street Number">
+            <br><br>
+            <label>Area:</label>
+            <input type="text" placeholder="Area">
+            <br><br>
+            <label>City:</label>
+            <input type="text" placeholder="city">
+            <br><br>
+            <label>PinCode:</label>
+            <input type="text" placeholder="pincode">
+        </div>
+
+        <div>
+            <h2>Contact Details</h2>
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="mobile number">
+            <br><br>
+            <label>Alternate Number:</label>
+            <input type="tel" placeholder="Alternate mobile number">
+            <br><br>
+            <label>EMAIL ID:</label>
+            <input type="email" placeholder="Email id">
+        </div>
+
+        <div>
+            <h2>Package and delivery details</h2>
+            <label>Does package contain glass or other sensible items?</label><br>
+            <input type="radio" name="sensibility">Yes
+            <br>
+            <input type="radio" name="sensibility">No 
+            <br><br>
+
+            <label>Type of delivery location</label><br>
+            <select>
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+                <option value="neighbour">Neighbour</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br><br>
+        <label>instructions:</label><br>
+        <textarea placeholder="Any instructions for our delivery executive"></textarea>
+    </form>
+    <br>
+    <input type="submit" submit>
+</body>
+</html>
