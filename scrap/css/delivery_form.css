@@ -1,0 +1,55 @@
+/* .flexbox{
+   
+} */
+body{
+    align-items: center;
+}
+.heading{
+    font-family: sans-serif;
+    background-color: sandybrown;
+    text-align: center;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid #333; */
+    background-color: rgb(162, 190, 189);
+    /* justify-content: center; */
+    gap:10px;
+    align-items: center;
+}
+.customer-details{
+    width: 500px;
+    /* text-align: center; */
+    padding: 10px 10px 10px 10px;
+    background-color: pink;
+    gap:15px;
+
+}
+
+.address{
+    width: 500px;
+    background-color:pink;
+    padding-top:  10px 10px 10px 10px;
+    /* text-align: center; */
+}
+.contact-details{
+    width: 500px;
+    background-color: pink;
+    padding:10px 10px 10px 10px;
+}
+.package{
+    width:500px;
+    background-color: pink;
+    padding: 10px 10px 10px 10px;
+}
+.location{
+    width:500px;
+    background-color: pink;
+    padding:10px 10px 10px 10px
+}
+.instructions{
+    width:500px;
+    background-color: pink;
+    padding:10px 10px 10px 10px;
+}
