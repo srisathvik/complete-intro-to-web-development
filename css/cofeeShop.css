@@ -1,0 +1,139 @@
+.checkout-page{
+    display:grid;
+    padding: 30px;
+    gap:30px;
+}
+.content{
+    display:flex;
+    gap: 20px;
+    justify-content:left;
+    flex-wrap: wrap;
+    position: relative;
+}
+.heading{
+    text-align: center;
+    width:100vw;
+    background-color: black;
+    color: chocolate;
+}
+.items{
+    background-color: coral;
+    display: flex ;
+    flex-direction: column;
+    /* height: 500px; */
+    width: 600px;
+    /* text-decoration: line-through; */
+    
+}
+.item-1{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.item-2{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.item-3{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.name-input{
+    position: relative;
+    display: inline-block;
+
+}
+.example-input{
+    border-color: crimson;
+    padding: 8px;
+    border-radius: 5px;
+}
+.input-name{
+     background-color: white;
+     color:crimson;
+     font-size: 11px;
+     position: absolute;
+     left:25px;
+     top: -7px;
+     padding: 0 2px;
+}
+.name{
+    position: relative;
+    right:-20px;
+    background-color: coral;
+    /* justify-content: center; */
+    display:inline-block;
+    width: 400px;
+    height:fit-content;
+    padding:20px;
+}
+.card-details{
+    background-color: white;
+    color:crimson;
+    font-size: 11px;
+    position: absolute;
+    left:25px;
+    top: -7px;
+    padding: 0 2px;
+}
+.payment{
+    background-color: coral;
+    /* justify-content: center; */
+    display:inline-block;
+    width: 400px;
+    height:fit-content;
+    padding:20px;
+    gap: 20px;
+    position: absolute;
+    right:200px;
+    top:200px;
+}
+.card-input{
+    position: relative;
+    display: inline-block;
+}
+.cvv-number{
+    position: relative;
+    display: inline-block;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+    bottom: 0px;
+}
+.value-1{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.value-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.value-3{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.submit{
+    border-radius:  20px;
+    width: 100vw;
+    background-color: coral;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+.box{
+    background-color: coral;
+}
