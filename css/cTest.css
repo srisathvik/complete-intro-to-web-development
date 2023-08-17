@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    margin:0px;
+}
+/* .element{
+    display: flex;
+    justify-content: center;
+} */
