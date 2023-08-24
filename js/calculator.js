@@ -1,3 +1,5 @@
+var operator;
+var num1, num2;
 var display = document.querySelector(".display");
 function onClickNumber(e) {
     display.innerHTML += e.target.innerHTML;
@@ -32,3 +34,58 @@ element=document.querySelector(".rem");
 element.addEventListener("click", function(){
     display.innerHTML = display.innerHTML.slice(0, -1);
 });
+
+
+element = document.querySelector(".mul");
+element.addEventListener("click", function(){
+    operator = "*";
+    num1 = Number(display.innerHTML);
+    display.innerHTML = "";
+});
+
+element = document.querySelector(".add");
+element.addEventListener("click", function(){
+    operator = "+";
+    num1 = Number(display.innerHTML);
+    display.innerHTML = "";
+});
+
+element = document.querySelector(".sub");
+element.addEventListener("click", function(){
+    operator = "-";
+    num1 = Number(display.innerHTML);
+    display.innerHTML = "";
+});
+
+element = document.querySelector(".division");
+element.addEventListener("click", function(){
+    operator = "/";
+    num1 = Number(display.innerHTML);
+    display.innerHTML = "";
+});
+
+function operation(){
+    console.log(operator , typeof(operator));
+    console.log(num1 , typeof(num1));
+    console.log(num2 , typeof(num2));
+        if(operator == "+"){
+            return num1 + num2;
+        }
+        else if(operator == "-"){
+            return num1 - num2;
+        }
+        else if(operator == "*"){
+            return num1 * num2;
+        }
+        else if (operator == "/"){
+            return Math.round(num1 / num2);
+        }
+    
+}
+element = document.querySelector(".sol");
+element.addEventListener("click", function(){
+    // console.log(operator, typeof(operator));
+    num2 = Number(display.innerHTML);
+    display.innerHTML = operation();
+    // console.log(display.innerHTML);
+})
