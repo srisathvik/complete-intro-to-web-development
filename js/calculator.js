@@ -2,7 +2,13 @@ var operator;
 var num1, num2;
 var display = document.querySelector(".display");
 function onClickNumber(e) {
-    display.innerHTML += e.target.innerHTML;
+    if(display.innerHTML === "0"){
+        display.innerHTML = e.target.innerHTML;
+    }
+    else{
+        display.innerHTML += e.target.innerHTML;
+    }
+    
 }
 var element = document.querySelector('.num1');
 element.addEventListener("click", onClickNumber);
@@ -27,12 +33,17 @@ element.addEventListener("click", onClickNumber);
 
 element = document.querySelector(".clr");
 element.addEventListener("click", function(){
-    display.innerHTML = "";
+    display.innerHTML = "0";
 });
 
 element=document.querySelector(".rem");
 element.addEventListener("click", function(){
+    if (display.innerHTML.length == 1){
+        display.innerHTML = "0"
+    }
+    else{
     display.innerHTML = display.innerHTML.slice(0, -1);
+    }
 });
 
 
@@ -65,9 +76,9 @@ element.addEventListener("click", function(){
 });
 
 function operation(){
-    console.log(operator , typeof(operator));
-    console.log(num1 , typeof(num1));
-    console.log(num2 , typeof(num2));
+    // console.log(operator , typeof(operator));
+    // console.log(num1 , typeof(num1));
+    // console.log(num2 , typeof(num2));
         if(operator == "+"){
             return num1 + num2;
         }
