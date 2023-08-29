@@ -12,7 +12,14 @@
 
 }
 .title{
-    font-size: large;
+    display: grid;
+    text-transform: capitalize;
+    font-weight: bold;
+    justify-content: center;
+    text-decoration: underline;
+    text-underline-offset: 1em;
+    padding-bottom: 50px;
+    
 }
 .wordle-item{
     border: 3px solid #ccc;
