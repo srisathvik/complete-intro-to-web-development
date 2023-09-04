@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
     margin: 10px auto;
-    row-gap: 10px;
+    row-gap: 5px;
     column-gap: 5px;
 
 
