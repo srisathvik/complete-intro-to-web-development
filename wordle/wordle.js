@@ -55,6 +55,9 @@ function checkmatch(row){
             rows[i].style.backgroundColor = "yellow";
             ansArr[ansArr.indexOf(word[i])] = ''
         }
+        else{
+            rows[i].style.backgroundColor = "grey";
+        }
     }
 }
 document.addEventListener('keydown', function(e){
